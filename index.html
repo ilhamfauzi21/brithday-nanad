@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Royal Midnight Rose Birthday — Eternal Color Version</title>
+<title>Selamat Ulang Tahun Mbuyy — 30 Juni</title>
 
 <!-- ============================================================
      SEMUA YANG BISA DIEDIT ADA DI BAGIAN "CONFIG" (cari di <script>).
@@ -3365,11 +3365,11 @@ body{
       fireConfetti();
       spawnHearts();
       const messages={
-        love:"Love room opened 💌",
-        cake:"Royal cake room unlocked 🎂",
-        rose:"Rose garden opened 🌹"
+        love:"Ruang surat kecil terbuka 💌",
+        cake:"Ruang kue ulang tahun terbuka 🎂",
+        rose:"Taman mawar terbuka 🌹"
       };
-      if(typeof showToast==="function") showToast(messages[door.dataset.door] || "Magic opened ✨");
+      if(typeof showToast==="function") showToast(messages[door.dataset.door] || "Kejutan terbuka ✨");
       if(typeof burstAt==="function"){
         const rect=door.getBoundingClientRect();
         burstAt(rect.left+rect.width/2, rect.top+rect.height/2, ["🌹","✨","💖","🎁","✦","🎆"]);
@@ -3384,7 +3384,7 @@ body{
   if(!showcase)return;
   showcase.addEventListener('click',(ev)=>{
     spawnHearts();
-    if(typeof showToast==='function') showToast('Birthday galaxy activated 🎂✨');
+    if(typeof showToast==='function') showToast('Galaksi ulang tahun terbuka 🎂✨');
     if(typeof burstAt==='function') burstAt(ev.clientX,ev.clientY,["🎂","💖","✨","🌹","🎁","✦"]);
     if(typeof shootFirework==='function'){
       const rect=showcase.getBoundingClientRect();
@@ -3476,7 +3476,7 @@ body{
   <div class="petals" id="petals"></div>
 
   <div id="opener">
-    <div class="opener-hint" id="openerHint">for your special day</div>
+    <div class="opener-hint" id="openerHint">untuk hari istimewamu</div>
     <div class="gift-wrap" id="giftWrap">
       <div class="gift-floor-glow"></div>
       <div class="gift-halo"></div>
@@ -3501,17 +3501,17 @@ body{
       <div class="gift birthday-pin-card">
         <div class="birthday-pin">
           <div class="pin-toprow">
-            <span class="pin-badge">birthday</span>
+            <span class="pin-badge">ulang tahun</span>
             <span class="pin-heart">❤</span>
           </div>
           <div class="pin-card">
             <div class="pin-tabs"><span></span><span></span></div>
-            <div class="pin-month" id="openerMonth">June</div>
+            <div class="pin-month" id="openerMonth">Juni</div>
             <div class="pin-date" id="openerDate">30</div>
             <div class="pin-divider"></div>
-            <div class="pin-note">special day for<br><strong id="openerNameMini">my everything</strong></div>
+            <div class="pin-note">hari istimewa untuk<br><strong id="openerNameMini">Mbuyy</strong></div>
           </div>
-          <div class="pin-bottom-pill">tap to open surprise ✦</div>
+          <div class="pin-bottom-pill">ketuk untuk buka kejutan ✦</div>
         </div>
       </div>
 
@@ -3525,13 +3525,13 @@ body{
         <span></span><span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
-      <div class="gift-bloom-message" aria-hidden="true">a flower blooms for you ✿</div>
+      <div class="gift-bloom-message" aria-hidden="true">bunga ini mekar untukmu ✿</div>
       <div class="gift-extra-pop" id="giftExtraPop" aria-hidden="true"></div>
 
       <div class="burst" id="burst"></div>
     </div>
-    <div class="opener-sub">tap the date card to open your surprise</div>
-    <div class="opener-mini">a blooming birthday moment is waiting ✿</div>
+    <div class="opener-sub">ketuk kartu tanggalnya untuk membuka kejutan</div>
+    <div class="opener-mini">ada ucapan kecil yang menunggumu ✿</div>
   </div>
 
   <section class="hero">
@@ -3569,8 +3569,8 @@ body{
         <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
       </div>
     </div>
-    <div class="eyebrow reveal">a birthday serenade in bloom</div>
-    <h1 class="reveal">Happy Birthday,<em id="theName">My Everything</em></h1>
+    <div class="eyebrow reveal">ucapan kecil di hari ulang tahunmu</div>
+    <h1 class="reveal">Selamat Ulang Tahun,<em id="theName">Mbuyy</em></h1>
     <p class="reveal" id="heroSub"></p>
 
     <div class="hero-showcase reveal">
@@ -3587,10 +3587,10 @@ body{
       <span class="hero-ring-dot d2"></span>
       <span class="hero-ring-dot d3"></span>
       <span class="hero-ring-dot d4"></span>
-      <div class="hero-float-badge b1"><div><b>🌹</b>rose<br>queen</div></div>
-      <div class="hero-float-badge b2"><div><b>✨</b>sweet<br>wishes</div></div>
-      <div class="hero-float-badge b3"><div><b>🎁</b>for<br>you</div></div>
-      <div class="hero-float-badge b4"><div><b>💖</b>all my<br>love</div></div>
+      <div class="hero-float-badge b1"><div><b>🌹</b>untuk<br>kamu</div></div>
+      <div class="hero-float-badge b2"><div><b>✨</b>doa<br>baik</div></div>
+      <div class="hero-float-badge b3"><div><b>🎁</b>kejutan<br>kecil</div></div>
+      <div class="hero-float-badge b4"><div><b>💖</b>tulus<br>untukmu</div></div>
       <span class="hero-showcase-spark s1">✦</span>
       <span class="hero-showcase-spark s2">✧</span>
       <span class="hero-showcase-spark s3">✦</span>
@@ -3613,17 +3613,17 @@ body{
       <div class="hero-mini-balloon mb1" aria-hidden="true"></div>
       <div class="hero-mini-balloon mb2" aria-hidden="true"></div>
       <div class="hero-mini-balloon mb3" aria-hidden="true"></div>
-      <div class="hero-wish-plaque" aria-hidden="true">happy birthday • bloom with love</div>
+      <div class="hero-wish-plaque" aria-hidden="true">selamat ulang tahun • tumbuh dengan bahagia</div>
     </div>
 
     <div class="hero-chip-row reveal">
-      <div class="hero-chip"><strong>Royal</strong><span>lebih cantik, lebih mewah, lebih hidup</span></div>
-      <div class="hero-chip"><strong>Bloom</strong><span>scroll ke bawah dan mawar akan mekar</span></div>
-      <div class="hero-chip"><strong>3D Touch</strong><span>Lovee you more sayang</span></div>
+      <div class="hero-chip"><strong>Indah</strong><span>dibuat hangat, rapi, dan tetap manis</span></div>
+      <div class="hero-chip"><strong>Mekar</strong><span>gulir ke bawah dan bunganya akan mekar</span></div>
+      <div class="hero-chip"><strong>Untukmu</strong><span>dibuat dengan rasa yang tulus</span></div>
     </div>
     <div class="flower-mark reveal">🌹</div>
-    <div class="scroll-cue reveal">Scroll Down, My Love...
-                A Beautiful Surprise Awaits You ❤️</div>
+    <div class="scroll-cue reveal">Gulir pelan-pelan ya...
+                masih ada kejutan kecil untukmu ❤️</div>
   </section>
 
   <section class="three-rose-section" id="threeRoseSection">
@@ -3633,8 +3633,8 @@ body{
     <span class="three-rose-spark s4">✧</span>
 
     <div class="flourish reveal">✦</div>
-    <div class="eyebrow reveal">royal rose sculpture</div>
-    <h2 class="reveal">A Floating 3D Rose, <em>Not Just A Flower</em></h2>
+    <div class="eyebrow reveal">mawar kecil untukmu</div>
+    <h2 class="reveal">Mawar 3D yang Mekar, <em>Bukan Sekadar Bunga</em></h2>
 
     <div id="threeRoseCanvasWrap" class="reveal">
       <canvas id="threeRoseCanvas"></canvas>
@@ -3648,7 +3648,7 @@ body{
       <div class="three-rose-fallback" id="threeRoseFallback">🌹</div>
     </div>
 
-    <div class="three-rose-hint reveal">scroll down and watch the rose bloom • drag / swipe the sculpture 🌹</div>
+    <div class="three-rose-hint reveal">gulir pelan dan lihat mawarnya mekar • geser untuk memutar 🌹</div>
   </section>
 
   <div class="floating-song-card reveal" id="floatingSongCard">
@@ -3659,7 +3659,7 @@ body{
 </div>
 
     <div class="floating-song-info">
-      <h3 id="floatSongTitle">Lover</h3>
+      <h3 id="floatSongTitle">Cruel Summer</h3>
       <p id="floatSongArtist">Taylor Swift</p>
     </div>
 
@@ -3677,12 +3677,12 @@ body{
 
   <section class="action3d-section" id="action3dSection">
     <div class="flourish reveal">✦</div>
-    <div class="eyebrow reveal">extra 3D birthday action</div>
+    <div class="eyebrow reveal">kejutan kecil lainnya</div>
     <div class="section-head reveal" style="margin-bottom:0">
-      <h2>A Room Filled With Love</h2>
+      <h2>Ruang Kecil yang Penuh Rasa</h2>
     </div>
     <p class="action3d-copy reveal">
-      Every card hides another reason why I love you more than yesterday.
+      Setiap kartu menyimpan alasan kecil kenapa kamu begitu berarti buatku.
     </p>
     <div class="action3d-stage reveal" id="action3dStage">
       <span class="action-orbit-dot" style="--a:20deg;--r:42%;--d:.1s"></span>
@@ -3691,23 +3691,23 @@ body{
       <div class="action3d-carousel" id="actionCarousel"></div>
     </div>
     <div class="action3d-controls reveal">
-      <button class="action3d-btn" id="actionSpinBtn" type="button">spin the magic ✦</button>
-      <button class="action3d-btn secondary" id="actionFireworkBtn" type="button">more fireworks 🎆</button>
+      <button class="action3d-btn" id="actionSpinBtn" type="button">putar kejutannya ✦</button>
+      <button class="action3d-btn secondary" id="actionFireworkBtn" type="button">tambah kembang api 🎆</button>
     </div>
-    <div class="action3d-hint reveal">drag / swipe the cards · tap a card for a mini surprise</div>
+    <div class="action3d-hint reveal">geser kartunya · ketuk kartu untuk kejutan kecil</div>
   </section>
 
   <section class="heart-tunnel-section" id="heartTunnelSection">
     <div class="flourish reveal">♡</div>
-    <div class="eyebrow reveal">a little universe of love</div>
+    <div class="eyebrow reveal">semesta kecil tentang rasa</div>
     <div class="section-head reveal" style="margin-bottom:0">
-      <h2>Our Hearts Forever</h2>
+      <h2>Hati yang Tetap Hangat</h2>
     </div>
     <p class="action3d-copy reveal">
-      Every heartbeat reminds me that my happiest place will always be beside you.
+      Setiap detak rasanya mengingatkanku bahwa dekat denganmu adalah tempat yang paling menenangkan.
     </p>
     <div class="heart-tunnel-wrap reveal">
-      <div class="heart-core">love</div>
+      <div class="heart-core">sayang</div>
       <div class="heart-tunnel" id="heartTunnel"></div>
     </div>
   </section>
@@ -3717,13 +3717,13 @@ body{
   
   <section class="rose-portal-section">
     <div class="flourish reveal">♕</div>
-    <div class="eyebrow reveal">Our Love Galaxy</div>
+    <div class="eyebrow reveal">galaksi kecil ulang tahunmu</div>
     <div class="section-head reveal" style="margin-bottom:0">
-      <h2>The Most Beautiful Day In My Universe</h2>
+      <h2>Hari yang Terasa Lebih Indah Karena Kamu</h2>
     </div>
     <p class="rose-portal-copy reveal">
-      Today the stars shine a little brighter because it's the day the love of my life was born. Every light here celebrates you.
-      tapi <strong>kue ulang tahun 3D</strong> di dalam glowing birthday galaxy, lengkap dengan orbit, kartu kejutan, dan mini fireworks.
+      Hari ini rasanya lebih terang karena kamu lahir. Setiap cahaya kecil di halaman ini dibuat untuk merayakan kamu.
+      Ada <strong>kue ulang tahun 3D</strong> di dalam galaksi kecil yang bercahaya, lengkap dengan orbit, kartu kejutan, dan kembang api mini.
     </p>
     <div class="birthday-showcase reveal" id="birthdayShowcase">
       <div class="showcase-ring r1"></div>
@@ -3750,7 +3750,7 @@ body{
           <div class="cake-orbit o1"></div>
           <div class="cake-orbit o2"></div>
           <div class="spark s1">✦</div><div class="spark s2">✧</div><div class="spark s3">✦</div><div class="spark s4">✧</div>
-          <div class="topper">Happy Birthday</div>
+          <div class="topper">Selamat Ulang Tahun</div>
           <div class="flame"></div>
           <div class="candle"></div>
           <div class="tier top"><div class="icing-top"></div><div class="frost"></div><div class="drips"></div><div class="beads"></div></div>
@@ -3768,36 +3768,36 @@ body{
 
   <section class="magic-doors-section">
     <div class="flourish reveal">✦</div>
-    <div class="eyebrow reveal">choose a birthday door</div>
+    <div class="eyebrow reveal">pilih pintu kejutan</div>
     <div class="section-head reveal" style="margin-bottom:0">
-      <h2>Three Little Love Surprises</h2>
+      <h2>Tiga Kejutan Kecil Untukmu</h2>
     </div>
     <p class="rose-portal-copy reveal">
-      Open every door and discover a little piece of my heart. Every surprise inside was made especially for you, my love.
+      Buka setiap pintunya pelan-pelan. Di dalamnya ada bagian kecil dari rasa sayang yang aku buat khusus untuk kamu.
     </p>
     <div class="magic-door-grid reveal" id="magicDoorGrid">
       <div class="magic-door" data-door="love">
-        <div class="magic-door-badge">room one</div>
+        <div class="magic-door-badge">ruang satu</div>
         <div class="magic-door-content">
           <div class="magic-door-icon">💌</div>
-          <h3>Love Letter Room</h3>
+          <h3>Ruang Surat Kecil</h3>
           <p>Tempat semua kata manis disimpan, dibuka pelan-pelan seperti surat rahasia.</p>
         </div>
       </div>
       <div class="magic-door" data-door="cake">
-        <div class="magic-door-badge">room two</div>
+        <div class="magic-door-badge">ruang dua</div>
         <div class="magic-door-content">
           <div class="magic-door-icon">🎂</div>
-          <h3>Royal Cake Room</h3>
+          <h3>Ruang Kue Ulang Tahun</h3>
           <p>Panggung kue ulang tahun dibuat lebih 3D, lebih mewah, dan lebih meriah.</p>
         </div>
       </div>
       <div class="magic-door" data-door="rose">
-        <div class="magic-door-badge">room three</div>
+        <div class="magic-door-badge">ruang tiga</div>
         <div class="magic-door-content">
           <div class="magic-door-icon">🌹</div>
-          <h3>Rose Garden Room</h3>
-          <p>Bukan sunflower lagi. Semua nuansa bunga dibuat jadi mawar romantis.</p>
+          <h3>Ruang Taman Mawar</h3>
+          <p>Semua nuansa bunga dibuat lebih lembut, hangat, dan romantis.</p>
         </div>
       </div>
     </div>
@@ -3806,15 +3806,15 @@ body{
 
   <section class="counter">
     <div class="flourish reveal">✦</div>
-    <div class="eyebrow reveal">since the day you arrived</div>
-    <div class="section-head reveal" style="margin-bottom:0"><h2>A Lifetime Worth Celebrating</h2></div>
+    <div class="eyebrow reveal">sejak hari kamu hadir</div>
+    <div class="section-head reveal" style="margin-bottom:0"><h2>Hidupmu Layak Dirayakan</h2></div>
     <div class="stats reveal" id="stats"></div>
   </section>
 
   <section>
     <div class="letter reveal">
-      <div class="eyebrow">from the bottom of my heart</div>
-      <h2>Today is the day <em>the world became</em> more beautiful.</h2>
+      <div class="eyebrow">dari hati yang paling tulus</div>
+      <h2>Hari ini dunia terasa <em>lebih indah</em> karena kamu lahir.</h2>
       <p id="letterBody"></p>
       <div class="signoff" id="signoff"></div>
     </div>
@@ -3823,16 +3823,16 @@ body{
   <section>
     <div class="section-head reveal">
       <div class="flourish">❀</div>
-      <div class="eyebrow">a thousand birthday wishes</div>
-      <h2>What I Celebrate About You</h2>
+      <div class="eyebrow">hal-hal yang aku syukuri darimu</div>
+      <h2>Yang Aku Rayakan Tentang Kamu</h2>
     </div>
     <div class="grid" id="qualGrid"></div>
   </section>
 
   <section class="reasons">
     <div class="flourish reveal">♡</div>
-    <div class="eyebrow reveal">tap to discover</div>
-    <div class="section-head reveal" style="margin-bottom:0"><h2>Reasons I Adore You</h2></div>
+    <div class="eyebrow reveal">ketuk untuk membaca</div>
+    <div class="section-head reveal" style="margin-bottom:0"><h2>Alasan Aku Menyayangimu</h2></div>
     <div class="reason-card reveal" id="reasonCard">
       <div class="reason-num" id="reasonNum">№ 1</div>
       <div class="reason-text" id="reasonText"></div>
@@ -3845,36 +3845,36 @@ body{
         </div>
       </div>
     </div>
-    <button class="reason-btn reveal" id="reasonBtn">another reason ♡</button>
+    <button class="reason-btn reveal" id="reasonBtn">alasan lainnya ♡</button>
   </section>
 
 
 
   <section class="garden">
     <div class="flourish reveal">✿</div>
-    <div class="eyebrow reveal">your birthday garden</div>
-    <h2 class="reveal">A Garden Blooming <em>Just For You Today</em></h2>
+    <div class="eyebrow reveal">taman kecil di hari ulang tahunmu</div>
+    <h2 class="reveal">Taman yang Mekar <em>Khusus Untukmu Hari Ini</em></h2>
     <div class="flowers" id="flowers"></div>
   </section>
 
   <section>
     <div class="gallery-head reveal">
       <div class="flourish">✦</div>
-      <div class="eyebrow">captured in time · celebrating you</div>
-      <h2>Your Beautiful <em style="font-style:italic;color:var(--rose-soft)">Moments</em></h2>
+      <div class="eyebrow">momen kecil · tentang kamu</div>
+      <h2>Momen <em style="font-style:italic;color:var(--rose-soft)">Indahmu</em></h2>
     </div>
     <div class="gallery" id="gallery"></div>
   </section>
 
   <section class="wish">
     <div class="flourish reveal">✦</div>
-    <div class="eyebrow reveal">close your eyes and</div>
-    <h2 class="reveal">Make a Wish</h2>
+    <div class="eyebrow reveal">pejamkan mata dan</div>
+    <h2 class="reveal">Ucapkan Harapan</h2>
     <div class="cake-stage reveal" id="cakeStage">
       <div class="cake" id="cake">
         <div class="cake-shadow"></div>
         <div class="cake-stars"><span>✦</span><span>✧</span><span>✦</span></div>
-        <div class="cake-topper">Happy Birthday</div>
+        <div class="cake-topper">Selamat Ulang Tahun</div>
         <div class="flame"></div><div class="smoke">💨</div><div class="candle"></div>
         <div class="tier top"><div class="frost"></div><div class="drips"></div><div class="cake-beads"></div></div>
         <div class="tier bot"><div class="frost"></div><div class="drips"></div><div class="cake-beads"></div></div>
@@ -3884,11 +3884,11 @@ body{
         <div class="cake-plate"></div>
       </div>
     </div>
-    <div class="wish-hint reveal" id="wishHint">tap the cake to blow out the candle ✨</div>
+    <div class="wish-hint reveal" id="wishHint">ketuk kuenya untuk meniup lilin ✨</div>
   </section>
 
   <section class="closing">
-    <div class="big reveal" id="closingBig">Happy Birthday</div>
+    <div class="big reveal" id="closingBig">Selamat Ulang Tahun</div>
     <p class="reveal" id="closingText"></p>
     <div class="hearts reveal">💖 💕 💖</div>
   </section>
@@ -3902,7 +3902,7 @@ body{
     </div>
     <div class="player-mid">
       <div class="viz"><i></i><i></i><i></i><i></i></div>
-      <div class="ptext"><small class="plabel">Now Playing</small><b id="songTitle">Your Song</b><span id="songArtist">press play 🎵</span></div>
+      <div class="ptext"><small class="plabel">Sedang Diputar</small><b id="songTitle">Lagu Untukmu</b><span id="songArtist">tekan tombolnya 🎵</span></div>
     </div>
     <button class="pbtn" id="playBtn" aria-label="play/pause">▶</button>
   </div>
@@ -3910,15 +3910,15 @@ body{
 
   <canvas id="confetti" style="position:fixed;inset:0;z-index:85;pointer-events:none"></canvas>
   <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
-  <div class="magic-toast" id="magicToast">Magic unlocked ✨</div>
+  <div class="magic-toast" id="magicToast">Kejutan terbuka ✨</div>
 
 <script>
 /* ============================================================
    ★★★  CONFIG — CUKUP EDIT BAGIAN INI  ★★★
    ============================================================ */
 const CONFIG = {
-  name: "My Everything",
-  heroSub: "On June 30, I celebrate the person who makes my days feel warmer, quieter, and more meaningful.",
+  name: "Mbuyy",
+  heroSub: "Hari ini tentang kamu. Tentang seseorang yang kehadirannya pelan-pelan membuat hidup terasa lebih hangat, lebih tenang, dan lebih berarti.",
 
   // Tanggal lahir (YYYY-MM-DD) untuk penghitung otomatis. Tahun boleh diganti sesuai kebutuhan.
   birthdate: "2000-06-30",
@@ -3928,79 +3928,77 @@ const CONFIG = {
   threeRoseTipColor:  "#ffd9e7",
 
   letter:
-    "On this special day, I just want you to know how deeply grateful I am for your presence in my life. " +
-    "You have a way of making ordinary moments feel calm, beautiful, and worth remembering. " +
-    "Your smile, your kindness, and the way you carry yourself are things I admire more than I can fully explain. " +
-    "I may not always find the perfect words, but I hope this little page can hold a part of what I feel for you. " +
-    "Thank you for being someone so easy to love, so meaningful to remember, and so precious to celebrate. " +
-    "May June 30 bring you happiness, peace, and the kind of love that stays with you long after the day ends.",
-  signoff: "With all my heart",
-  closingBig: "Happy Birthday",
-  closing: "For June 30, and for every day after it, I hope you always feel loved, valued, and deeply appreciated.",
+    "Selamat ulang tahun ke-26, Mbuyy. Di hari ini aku cuma mau bilang bahwa aku benar-benar bersyukur kamu ada. " +
+    "Kamu punya cara yang sederhana tapi indah untuk membuat hari biasa terasa lebih ringan. " +
+    "Dari senyummu, caramu bicara, sampai hal-hal kecil yang kamu lakukan, semuanya punya tempat sendiri di hatiku. " +
+    "Aku mungkin tidak selalu pandai menyampaikan rasa, tapi aku ingin kamu tahu bahwa rasa sayangku ke kamu tulus. " +
+    "Terima kasih sudah menjadi seseorang yang membuatku ingin menjaga, menghargai, dan terus belajar mencintai dengan lebih baik. " +
+    "Semoga di usia yang baru ini, kamu selalu diberi hati yang tenang, langkah yang dimudahkan, dan bahagia yang datang tanpa harus kamu minta.",
+  signoff: "Dari aku, yang sayang kamu dengan tulus",
+  closingBig: "Selamat Ulang Tahun",
+  closing: "Untuk 30 Juni, untuk usiamu yang ke-26, dan untuk semua hari setelah ini. Semoga kamu selalu merasa dicintai, dihargai, dan tidak pernah sendirian melewati apa pun.",
 
   qualities: [
-    { ic:"😊", title:"Your Smile",    text:"A quiet kind of light that makes the day feel softer." },
-    { ic:"✨", title:"Your Presence", text:"The kind of presence that brings comfort without needing many words." },
-    { ic:"🌸", title:"Your Kindness", text:"Gentle, sincere, and felt in the little things you do." },
-    { ic:"💫", title:"Your Laughter", text:"A simple sound that can make an ordinary moment feel special." },
-    { ic:"🔥", title:"Your Strength", text:"The way you keep going with grace is something I truly admire." },
-    { ic:"💖", title:"Your Heart", text:"Warm, thoughtful, and beautiful in ways that are not always easy to describe." },
-    { ic:"👑", title:"Your Grace", text:"You have a quiet elegance that makes you unforgettable." },
-    { ic:"🦋", title:"Your Growth", text:"Watching you become more yourself is something worth celebrating." },
-    { ic:"🌙", title:"Your Calm", text:"You make silence feel peaceful and closeness feel safe." },
-    { ic:"🎀", title:"Your Beauty", text:"Not only in how you look, but in the way you exist." },
-    { ic:"💌", title:"Your Meaning", text:"You are not just present in my days; you are part of what makes them matter." },
-    { ic:"🌟", title:"Your Light", text:"A steady light that stays, even in small and quiet moments." },
+    { ic:"😊", title:"Senyummu", text:"Sederhana, tapi selalu berhasil membuat suasana terasa lebih hangat." },
+    { ic:"✨", title:"Hadirmu", text:"Kamu punya cara sendiri untuk membuat dekat terasa nyaman." },
+    { ic:"🌸", title:"Baikmu", text:"Tulus, lembut, dan terasa dari hal-hal kecil yang kamu lakukan." },
+    { ic:"💫", title:"Tawamu", text:"Hal kecil yang sering membuat hari biasa terasa lebih hidup." },
+    { ic:"🔥", title:"Kuatmu", text:"Aku kagum pada caramu tetap berjalan, bahkan saat tidak semuanya mudah." },
+    { ic:"💖", title:"Hatimu", text:"Hangat, perhatian, dan indah dengan caranya sendiri." },
+    { ic:"👑", title:"Anggunmu", text:"Ada ketenangan dalam dirimu yang membuatmu mudah diingat." },
+    { ic:"🦋", title:"Tumbuhmu", text:"Melihatmu terus menjadi lebih baik adalah hal yang pantas dirayakan." },
+    { ic:"🌙", title:"Tenangmu", text:"Bersamamu, diam pun bisa terasa nyaman." },
+    { ic:"🎀", title:"Cantikmu", text:"Bukan cuma dari rupa, tapi juga dari caramu membawa diri." },
+    { ic:"💌", title:"Berartimu", text:"Kamu bukan sekadar hadir, kamu membuat banyak hal terasa punya arti." },
+    { ic:"🌟", title:"Cahayamu", text:"Tidak perlu berlebihan, kamu tetap punya cara untuk membuat semuanya terasa indah." },
   ],
 
   reasons: [
-    "Because your presence makes the world around me feel calmer.",
-    "Because your smile is something I never get tired of seeing.",
-    "Because you make simple moments feel meaningful.",
-    "Because your kindness says so much about the beauty of your heart.",
-    "Because being near you feels peaceful in a way I cannot replace.",
-    "Because I admire the way you carry yourself with strength and softness.",
-    "Because you are unforgettable in the most natural way.",
-    "Because you make love feel less complicated and more sincere.",
-    "Because you deserve to be celebrated with care, not just today, but always.",
-    "Because every little detail about you has become something I appreciate.",
-    "Because loving you feels steady, honest, and real.",
-    "Because June 30 feels more beautiful because it belongs to you.",
-    "Because this page is only a small part of everything I wish I could give you.",
+    "Karena hadirmu membuat banyak hal terasa lebih tenang.",
+    "Karena senyummu selalu punya tempat khusus di ingatanku.",
+    "Karena kamu bisa membuat hal sederhana terasa berarti.",
+    "Karena kebaikanmu terasa tulus, bahkan dari hal-hal kecil.",
+    "Karena berada di dekatmu membuatku merasa nyaman.",
+    "Karena aku kagum pada caramu tetap kuat dan lembut sekaligus.",
+    "Karena kamu mudah disayangi tanpa harus banyak alasan.",
+    "Karena bersamamu, rasa sayang terasa jujur dan tenang.",
+    "Karena kamu pantas dirayakan dengan sepenuh hati, bukan hanya hari ini.",
+    "Karena setiap detail kecil tentangmu selalu berhasil aku syukuri.",
+    "Karena menyayangimu terasa nyata, bukan sekadar kata-kata.",
+    "Karena 30 Juni jadi terasa lebih indah karena itu hari lahirmu.",
+    "Karena halaman kecil ini belum cukup untuk menunjukkan betapa berartinya kamu.",
   ],
 
   flowers: ["🌹","🌹","🌹","💐","🌷","🌸","🌺","🥀","🌿","✨","💖","🎀"],
 
-
   // Tambahan kartu untuk bagian 3D Action. Bebas diganti sesuai ucapan/tema.
   action3D: [
-    { icon:"🎆", title:"Quiet Firework", text:"A small light for a day that deserves to be remembered." },
-    { icon:"🎁", title:"Small Gift", text:"A simple surprise made to make this page feel more personal." },
-    { icon:"🌹", title:"Rose Moment", text:"A soft bloom to represent feelings that are sincere and lasting." },
-    { icon:"💌", title:"Love Note", text:"A short message, written with care, for someone truly special." },
-    { icon:"🎂", title:"Birthday Wish", text:"A warm wish for happiness, peace, and everything good on June 30." },
-    { icon:"🦋", title:"Soft Detail", text:"A gentle touch to make the page feel more elegant and meaningful." },
-    { icon:"💫", title:"Dream Orbit", text:"A subtle motion to keep the page alive without making it excessive." },
-    { icon:"👑", title:"Main Moment", text:"Because today is about celebrating you with respect, warmth, and love." },
+    { icon:"🎆", title:"Cahaya Kecil", text:"Untuk hari yang pantas dikenang dengan cara yang hangat." },
+    { icon:"🎁", title:"Hadiah Sederhana", text:"Bukan sesuatu yang besar, tapi dibuat dengan rasa yang tulus." },
+    { icon:"🌹", title:"Bunga Untukmu", text:"Tanda kecil untuk rasa sayang yang ingin terus tumbuh." },
+    { icon:"💌", title:"Pesan Kecil", text:"Beberapa kata sederhana untuk seseorang yang begitu berarti." },
+    { icon:"🎂", title:"Doa Ulang Tahun", text:"Semoga bahagia, tenang, dan hal baik selalu dekat denganmu." },
+    { icon:"🦋", title:"Detail Lembut", text:"Hal kecil yang dibuat agar halaman ini terasa lebih personal." },
+    { icon:"💫", title:"Harapan Baik", text:"Semoga langkahmu dimudahkan dan hatimu selalu dijaga." },
+    { icon:"👑", title:"Hari Tentangmu", text:"Karena hari ini memang untuk merayakan kamu sepenuh hati." },
   ],
 
   // Foto: path disesuaikan dengan struktur folder assets agar gambar terbaca di Vercel.
-    photos: [
-    { src:"assets/image/images1.jpeg", cap:"you" },
-    { src:"assets/image/images2.jpeg", cap:"are" },
-    { src:"assets/image/images3.jpeg", cap:"so" },
-    { src:"assets/image/images4.jpeg", cap:"beautiful" },
-    ],
+  photos: [
+    { src:"assets/image/images1.jpeg", cap:"senyum" },
+    { src:"assets/image/images2.jpeg", cap:"hangat" },
+    { src:"assets/image/images3.jpeg", cap:"tenang" },
+    { src:"assets/image/images4.jpeg", cap:"berarti" },
+  ],
 
-    // Audio: path disesuaikan dengan struktur folder assets agar musik terbaca di Vercel.
-    music: {
+  // Audio: path disesuaikan dengan struktur folder assets agar musik terbaca di Vercel.
+  music: {
     src:"assets/audio/lagu.mp3",
     title:"Cruel Summer",
     artist:"Taylor Swift",
     link:"",
-    },
-};
-/* ====================  AKHIR CONFIG  ==================== */
+  },
+};/* ====================  AKHIR CONFIG  ==================== */
 
 const $=id=>document.getElementById(id);
 $("theName").textContent=CONFIG.name;
@@ -4016,12 +4014,12 @@ $("songArtist").textContent=CONFIG.music.artist;
   const monthEl=$("openerMonth");
   const dateEl=$("openerDate");
   const nameMini=$("openerNameMini");
-  if(nameMini) nameMini.textContent=(CONFIG.name||"my everything").toLowerCase();
+  if(nameMini) nameMini.textContent=(CONFIG.name||"Mbuyy");
   const raw=CONFIG.birthdate;
   if(raw){
     const d=new Date(raw+"T00:00:00");
     if(!Number.isNaN(d.getTime())){
-      const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+      const months=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
       if(monthEl) monthEl.textContent=months[d.getMonth()];
       if(dateEl) dateEl.textContent=String(d.getDate()).padStart(2,"0");
     }
@@ -4035,7 +4033,7 @@ $("songArtist").textContent=CONFIG.music.artist;
   [
     {n:"26", l:"Years of You"},
     {n:"9,496", l:"Days on Earth"},
-    {n:"∞", l:"Reasons to Love You"}
+    {n:"∞", l:"Alasan untuk Sayang Kamu"}
   ].forEach(d=>{
     const el=document.createElement("div");
     el.className="stat";
@@ -4106,7 +4104,7 @@ CONFIG.flowers.forEach((f,i)=>{
 
 CONFIG.photos.forEach(p=>{
   const d=document.createElement("div");d.className="polaroid reveal";
-  d.innerHTML=`<div class="pic">${p.src?`<img src="${p.src}" alt="${p.cap}">`:`<div class="ph">add a photo<br>in CONFIG.photos</div>`}</div><div class="cap">${p.cap}</div>`;
+  d.innerHTML=`<div class="pic">${p.src?`<img src="${p.src}" alt="${p.cap}">`:`<div class="ph">tambahkan foto<br>di CONFIG.photos</div>`}</div><div class="cap">${p.cap}</div>`;
   d.addEventListener("click",()=>{const lb=$("lightbox");
     if(p.src){$("lbImg").src=p.src;$("lbImg").style.display="block";$("lbPh").textContent="";}
     else{$("lbImg").style.display="none";$("lbPh").textContent="add a photo in CONFIG.photos ✨";}
@@ -4334,7 +4332,7 @@ audio.addEventListener("timeupdate",()=>{
 $("cakeStage").addEventListener("click",()=>{const cake=$("cake");
   if(cake.classList.contains("out"))return;
   cake.classList.add("out","party");
-  $("wishHint").textContent="Your wish has been made 🌟 Happy Birthday! 3D cake mode unlocked.";
+  $("wishHint").textContent="Harapanmu sudah tersimpan 🌟 Selamat ulang tahun, Mbuyy.";
   fireConfetti();
   spawnHearts();
   setTimeout(()=>spawnHearts(),260);
@@ -4984,11 +4982,11 @@ function loop(){cx.clearRect(0,0,cv.width,cv.height);
       fireConfetti();
       spawnHearts();
       const messages={
-        love:"Love room opened 💌",
-        cake:"Royal cake room unlocked 🎂",
-        rose:"Rose garden opened 🌹"
+        love:"Ruang surat kecil terbuka 💌",
+        cake:"Ruang kue ulang tahun terbuka 🎂",
+        rose:"Taman mawar terbuka 🌹"
       };
-      if(typeof showToast==="function") showToast(messages[door.dataset.door] || "Magic opened ✨");
+      if(typeof showToast==="function") showToast(messages[door.dataset.door] || "Kejutan terbuka ✨");
       if(typeof burstAt==="function"){
         const rect=door.getBoundingClientRect();
         burstAt(rect.left+rect.width/2, rect.top+rect.height/2, ["🌹","✨","💖","🎁","✦","🎆"]);
