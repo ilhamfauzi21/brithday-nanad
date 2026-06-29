@@ -3653,7 +3653,7 @@ body{
 
   <div class="floating-song-card reveal" id="floatingSongCard">
     <div class="song-cover">
-        <img src="./image/images5.jpeg" alt="Song Cover" id="songCover">
+        <img src="assets/image/images5.jpeg" alt="Song Cover" id="songCover">
         <div class="cover-glow"></div>
     </div>
 </div>
@@ -3984,17 +3984,17 @@ const CONFIG = {
     { icon:"👑", title:"Main Moment", text:"Because today is about celebrating you with respect, warmth, and love." },
   ],
 
-  // Foto: path tetap dipertahankan agar gambar tidak rusak.
+  // Foto: path disesuaikan dengan struktur folder assets agar gambar terbaca di Vercel.
     photos: [
-    { src:"image/images1.jpeg", cap:"you" },
-    { src:"image/images2.jpeg", cap:"are" },
-    { src:"image/images3.jpeg", cap:"so" },
-    { src:"image/images4.jpeg", cap:"beautiful" },
+    { src:"assets/image/images1.jpeg", cap:"you" },
+    { src:"assets/image/images2.jpeg", cap:"are" },
+    { src:"assets/image/images3.jpeg", cap:"so" },
+    { src:"assets/image/images4.jpeg", cap:"beautiful" },
     ],
 
-    // Audio: path tetap dipertahankan agar musik tidak rusak.
+    // Audio: path disesuaikan dengan struktur folder assets agar musik terbaca di Vercel.
     music: {
-    src:"audio/lagu.mp3",
+    src:"assets/audio/lagu.mp3",
     title:"Cruel Summer",
     artist:"Taylor Swift",
     link:"",
@@ -4033,8 +4033,8 @@ $("songArtist").textContent=CONFIG.music.artist;
   const wrap=$("stats");
 
   [
-    {n:"21", l:"Years of You"},
-    {n:"7.670", l:"Days on Earth"},
+    {n:"26", l:"Years of You"},
+    {n:"9,496", l:"Days on Earth"},
     {n:"∞", l:"Reasons to Love You"}
   ].forEach(d=>{
     const el=document.createElement("div");
